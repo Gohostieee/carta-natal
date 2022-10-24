@@ -12850,3 +12850,113 @@ console.error: "Error when attaching target:" (new Error("Connection closed, pen
 console.warn: "Listener for event 'frame' did not return a promise."
 console.error: "Error when attaching target:" (new Error("Connection closed, pending request to server0.conn0.windowGlobal4294967416/thread1, type isAttached failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:301:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:49:19\nattachThread@resource://devtools/client/fronts/targets/target-mixin.js:561:49\n", "resource://devtools/shared/protocol/Front.js", 107))
 console.warn: "Listener for event 'frame' did not return a promise."
+1666643436727	geckodriver	INFO	Listening on 127.0.0.1:53176
+1666643440261	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53177" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofilejMRz05"
+1666643442475	Marionette	INFO	Marionette enabled
+1666643442492	Marionette	INFO	Listening on port 53187
+Read port: 53187
+WebDriver BiDi listening on ws://127.0.0.1:53177
+1666643442907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1666643452138	geckodriver	INFO	Listening on 127.0.0.1:53191
+1666643455324	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53192" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofilebIMZ9t"
+1666643456735	Marionette	INFO	Marionette enabled
+1666643456748	Marionette	INFO	Listening on port 53201
+Read port: 53201
+WebDriver BiDi listening on ws://127.0.0.1:53192
+1666643457080	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofilebIMZ9t\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53192/devtools/browser/e343bb5b-e13e-46ff-9192-fb7721e0d050
+1666633744071	geckodriver	INFO	Listening on 127.0.0.1:50409
+1666633747100	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50410" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofileRKMU6k"
+1666633748196	Marionette	INFO	Marionette enabled
+1666633748209	Marionette	INFO	Listening on port 50421
+Read port: 50421
+WebDriver BiDi listening on ws://127.0.0.1:50410
+1666633748460	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofileRKMU6k\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50410/devtools/browser/b294c0f4-b3a3-467d-9deb-35fb44cd3107
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 191 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 6814 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 6241 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2911 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 1685 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2074 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666633951082	geckodriver	INFO	Listening on 127.0.0.1:52251
+1666633954087	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52252" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofile0RCouT"
+1666633954927	Marionette	INFO	Marionette enabled
+1666633954943	Marionette	INFO	Listening on port 52264
+Read port: 52264
+WebDriver BiDi listening on ws://127.0.0.1:52252
+1666633955263	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofile0RCouT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52252/devtools/browser/84104ae8-6b06-438f-aadc-008bc9d8dc8b
+JavaScript warning: https://pagead2.googlesyndication.com/bg/uorw1Q15Z41enm5ok1wjUR_2roEciA9rCBWFXmlrAj4.js line 2 > eval line 1723 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2561 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 7253 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2997 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 593"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:593:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:126:18
+Line: 593, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 593: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 593"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:593:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:126:18
+Line: 593, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 593: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1666634258166	geckodriver	INFO	Listening on 127.0.0.1:58329
+1666634261988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58330" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofileysvWKc"
+1666634263258	Marionette	INFO	Marionette enabled
+1666634263270	Marionette	INFO	Listening on port 58342
+Read port: 58342
+WebDriver BiDi listening on ws://127.0.0.1:58330
+1666634263519	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\w3isz\\AppData\\Local\\Temp\\rust_mozprofileysvWKc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58330/devtools/browser/e76aed06-cdd7-46c9-96a4-a92f5adfd39a
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 5907 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 3795 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 593"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:593:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:126:18
+Line: 593, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 593: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 593"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:593:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:126:18
+Line: 593, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 593: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Error when attaching target:" (new Error("Connection closed, pending request to server0.conn0.windowGlobal4294967385/thread1, type isAttached failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:48:19\nattachThread@resource://devtools/client/fronts/targets/target-mixin.js:561:49\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: (new Error("Unexpected packet server0.conn0.windowGlobal4294967385/thread1, {\"value\":true,\"from\":\"server0.conn0.windowGlobal4294967385/thread1\"}", "resource://devtools/shared/protocol/Front.js", 362))
+Handler function LocalDebuggerTransport instance's this.other.hooks.onPacket threw an exception: Error: Unexpected packet server0.conn0.windowGlobal4294967385/thread1, {"value":true,"from":"server0.conn0.windowGlobal4294967385/thread1"}
+Stack: onPacket@resource://devtools/shared/protocol/Front.js:362:24
+onPacket@resource://devtools/client/devtools-client.js:482:13
+send/<@resource://devtools/shared/transport/local-transport.js:68:25
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 362, column: 24
+console.error: (new Error("Unexpected packet server0.conn0.windowGlobal4294967385/thread1, {\"value\":true,\"from\":\"server0.conn0.windowGlobal4294967385/thread1\"}", "resource://devtools/shared/protocol/Front.js", 362))

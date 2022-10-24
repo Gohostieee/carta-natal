@@ -17,7 +17,6 @@ browser = webdriver.Firefox(options=options)
 
 
 def inputCarta(browser, data):
-    navigateTo(browser, "https://carta-natal.es/carta.php")
     inputElements = {"nombre": browser.find_element(By.ID, 'nombre'),
                      "fecha": browser.find_element(By.ID, "fecha"),
                      "hora": browser.find_element(By.ID, "hora"),
@@ -61,7 +60,7 @@ console.log(element.length);
         const city = document.getElementsByTagName("noscript")
         console.log(city)
         const province = document.getElementById("n1").getElementsByTagName("option")[1]
-        console.log(province)
+        console.log(province,"fuap")
         return province
     """).click()
     browser.find_element(By.ID, 'select-ciudad').click()
@@ -73,15 +72,32 @@ console.log(element.length);
 
     """).click()
 
-    pdf = None
-    while pdf is None:
+    cardData = None
+    while cardData is None:
         try:
-            pdf = browser.execute_script("""
-                return document.querySelector('[title="PDF"]').href
+            cardData = dict()
+
+            cardData["img"] = browser.execute_script("""
+                return document.getElementById('cartaimg').src
+            """)
+            cardData["bars"] = browser.execute_script("""
+            const bar = []
+            const names = []
+            const bars = []
+            Array.prototype.map.call(document.querySelectorAll(".generalidad"), (x)=>x.innerText.split("\n").forEach(y=>{if(y){names.push(y)}}))
+            
+            Array.prototype.map.call( document.getElementsByClassName('barra'),x=>bars.push([x.children[0].style["width"],x.children[0].style["backgroundColor"]]))
+                return bar
+            """)
+            cardData["tables"] = browser.execute_script("""
+            return document.querySelectorAll("table.astros.pull-left")
             """)
         except:
-            pdf = None
-    return pdf
+            cardData = None
+
+    navigateTo(browser, "https://carta-natal.es/carta.php")
+
+    return cardData
 
 
 app = Flask(__name__)
@@ -94,5 +110,8 @@ def getCarta():
 
 
 if __name__ == '__main__':
+    navigateTo(browser, "https://carta-natal.es/carta.php")
+
+    app.run()
     pass
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
