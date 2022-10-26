@@ -55,45 +55,54 @@ console.log(element.length);
     # actions.scroll_by_amount(0,1250)
 
     inputElements["pais"].click()
-
-    browser.execute_script("""
-        const city = document.getElementsByTagName("noscript")
-        console.log(city)
-        const province = document.getElementById("n1").getElementsByTagName("option")[1]
-        console.log(province,"fuap")
-        return province
-    """).click()
-    browser.find_element(By.ID, 'select-ciudad').click()
-    browser.execute_script("""
-        return document.getElementById("ui-id-1").getElementsByTagName("a")[0]
-    """).click()
-    browser.execute_script("""
-    return document.getElementsByName("ok")[0]
-
-    """).click()
+    passed = False
+    while not passed:
+        try:
+            browser.execute_script("""
+                const city = document.getElementsByTagName("noscript")
+                console.log(city)
+                const province = document.getElementById("n1").getElementsByTagName("option")[1]
+                console.log(province,"fuap")
+                return province
+            """).click()
+            browser.find_element(By.ID, 'select-ciudad').click()
+            browser.execute_script("""
+                return document.getElementById("ui-id-1").getElementsByTagName("a")[0]
+            """).click()
+            browser.execute_script("""
+            return document.getElementsByName("ok")[0]
+        
+            """).click()
+            passed = True
+        except:
+            passed = False
 
     cardData = None
     while cardData is None:
-        try:
-            cardData = dict()
+        cardData = dict()
 
-            cardData["img"] = browser.execute_script("""
+        cardData["img"] = browser.execute_script("""
                 return document.getElementById('cartaimg').src
             """)
-            cardData["bars"] = browser.execute_script("""
-            const bar = []
-            const names = []
-            const bars = []
-            Array.prototype.map.call(document.querySelectorAll(".generalidad"), (x)=>x.innerText.split("\n").forEach(y=>{if(y){names.push(y)}}))
+        cardData["bars"], cardData["names"] = browser.execute_script("""
+              function fuaps(){
+
+            const B = Array.prototype.map.call(document.querySelectorAll(".generalidad"), x=>x);
+            const bars = [];
+
+           const names =  B.filter(function(v, i) {
+  // check the index is odd
+  return i % 2 == 0 || i == 0;
+}).map(x=>x.innerText).join();
             
-            Array.prototype.map.call( document.getElementsByClassName('barra'),x=>bars.push([x.children[0].style["width"],x.children[0].style["backgroundColor"]]))
-                return bar
+            Array.prototype.map.call( document.getElementsByClassName('barra'),(x,i)=>bars.push([x.children[0].style["width"],x.children[0].style["backgroundColor"]]));
+                return [bars,names]
+}
+            return fuaps()
             """)
-            cardData["tables"] = browser.execute_script("""
+        cardData["tables"] = [x.get_attribute('outerHTML') for x in browser.execute_script("""
             return document.querySelectorAll("table.astros.pull-left")
-            """)
-        except:
-            cardData = None
+            """)]
 
     navigateTo(browser, "https://carta-natal.es/carta.php")
 
@@ -106,7 +115,15 @@ app = Flask(__name__)
 @app.route("/get_carta", methods=["POST"])
 def getCarta():
     global browser
-    return inputCarta(browser=browser, data=json.loads(request.data.decode()))
+    fuap = None
+    try:
+        fuap = inputCarta(browser=browser, data=json.loads(request.data.decode()))
+    except Exception as e:
+        print(e)
+    finally:
+        navigateTo(browser, "https://carta-natal.es/carta.php")
+
+    return fuap
 
 
 if __name__ == '__main__':
