@@ -32,7 +32,7 @@ const Cartanatal = () => {
 
 					<select className={"w-[202px] border-b outline-0"}>
 						<option></option>
-						{paises.map((x) => <option className={"m-auto"}>{x}</option>)}
+						{paises.map((x) => <option key = {x} className={"m-auto"}>{x}</option>)}
 					</select>
 				</div>
 
