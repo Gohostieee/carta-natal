@@ -130,7 +130,9 @@ def getCarta():
         pass
     return fuap
 
-
+@app.route("/")
+def home_view():
+        return "<h1>Welcome to Geeks for Geeks</h1>"
 if __name__ == '__main__':
     navigateTo(browser, "https://carta-natal.es/carta.php")
 
