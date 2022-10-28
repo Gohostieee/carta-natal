@@ -17,6 +17,8 @@ browser = webdriver.Firefox(options=options)
 
 
 def inputCarta(browser, data):
+    navigateTo(browser, "https://carta-natal.es/carta.php")
+
     inputElements = {"nombre": browser.find_element(By.ID, 'nombre'),
                      "fecha": browser.find_element(By.ID, "fecha"),
                      "hora": browser.find_element(By.ID, "hora"),
@@ -101,9 +103,12 @@ console.log(element.length);
             return fuaps()
             """)
         cardData["tables"] = [x.get_attribute('outerHTML') for x in browser.execute_script("""
+            Array.prototype.map.call(document.querySelectorAll("img[src='//carta-natal.es/archivos/css/sprite.png'"),x=>x.remove())
             return document.querySelectorAll("table.astros.pull-left")
             """)]
-
+        cardData["aspect"] = browser.execute_script("""
+        return document.getElementById("aspectario").querySelector(".table-responsive").outerHTML
+        """)
     navigateTo(browser, "https://carta-natal.es/carta.php")
 
     return cardData
@@ -121,8 +126,8 @@ def getCarta():
     except Exception as e:
         print(e)
     finally:
-        navigateTo(browser, "https://carta-natal.es/carta.php")
-
+        #navigateTo(browser, "https://carta-natal.es/carta.php")
+        pass
     return fuap
 
 
