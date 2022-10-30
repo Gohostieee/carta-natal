@@ -229,12 +229,31 @@ const Cartanatal = () => {
 				</form>
 
 			</div>
-			{card != null &&
-				<>
-                    <div dangerouslySetInnerHTML={{__html:card[1]}}/>
-                    <Tables card={card[0]}/>
-				 </>
-			}
+			<div id={"carta"}>
+
+				{card && <div
+                    className={"w-[920px] border-y shadow-md m-auto border-gray-400 mt-16 mb-24 flex flex-col justify-center"}>
+                    <div>
+                        <p className={"text-center font-light text-6xl"}>{user?.nombre}</p>
+
+                    </div>
+                    <div className={"flex justify-center border-b m-auto mt-8 pb-2 border-gray-500"}>
+                        <p className={"text-center font-light ml-8 mr-8 text-2xl"}>Fecha:{user?.fecha}</p>
+
+                        <p className={"text-center font-light ml-8 mr-8 text-2xl"}>Hora:{user?.hora}</p>
+
+                        <p className={"text-center font-light ml-8 mr-8 text-2xl"}>Provenencia:{user?.pais}</p>
+
+                    </div>
+                    <div className={"overflow-hidden max-w-[390px] max-h-[400px] border-2 m-auto relative mt-16 mb-12"}>
+                        <Image src={card["img"]} width={400} height={400} className={"m-auto select-none"}/>
+                        <div className={"absolute h-[20px] w-[120px] bottom-0 right-0 bg-white"}></div>
+
+                    </div>
+                    <Tables className={"flex select-none m-auto justify-evenly fuap"} card={card}/>
+					{/*"<div  style={styles} dangerouslySetInnerHTML={{__html: card["aspect"]}}/>"*/}
+                </div>}
+			</div>
 
 
 		</>
