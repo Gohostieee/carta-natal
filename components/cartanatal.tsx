@@ -229,6 +229,7 @@ const Cartanatal = () => {
 				</form>
 
 			</div>
+
 			<div id={"carta"}>
 
 				{card && <div
